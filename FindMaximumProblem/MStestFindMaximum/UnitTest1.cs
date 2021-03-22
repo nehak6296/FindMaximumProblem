@@ -64,7 +64,7 @@ namespace MStestFindMaximum
         }
         [TestMethod]
         //Act
-        public void Given_MaxStringNumberAt1stPosition_WhenChecked_ThenReturn_SameNumber()
+        public void Given_MaxStringAt1stPosition_WhenChecked_ThenReturn_SameNumber()
         {
             string expectedResult = "Carrot";
             string result = MaximumNumberCheck.MaximumStringNumber("Carrot", "Apple", "Banana");
@@ -73,10 +73,20 @@ namespace MStestFindMaximum
         }
         [TestMethod]
         //Act
-        public void Given_MaxStringNumberAt2ndPosition_WhenChecked_ThenReturn_SameNumber()
+        public void Given_MaxStringAt2ndPosition_WhenChecked_ThenReturn_SameNumber()
         {
             string expectedResult = "Carrot";
             string result = MaximumNumberCheck.MaximumStringNumber("Apple", "Carrot", "Banana");
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        //Act
+        public void Given_MaxStringAt3rdPosition_WhenChecked_ThenReturn_SameNumber()
+        {
+            string expectedResult = "Carrot";
+            string result = MaximumNumberCheck.MaximumStringNumber("Apple", "Banana", "Carrot");
             //Assert
             Assert.AreEqual(expectedResult, result);
         }
