@@ -17,5 +17,14 @@ namespace MStestFindMaximum
             //Assert
             Assert.AreEqual(expectedResult, result);
         }
+        [TestMethod]
+        //Act
+        public void Given_MaxNumberAt2ndPosition_WhenChecked_ThenReturn_SameNumber()
+        {
+            int expectedResult = 44;
+            int result = MaximumNumberCheck.MaximumIntegerNumber(33, 44, 11);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }
