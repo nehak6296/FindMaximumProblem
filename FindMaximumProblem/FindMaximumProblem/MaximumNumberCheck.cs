@@ -40,5 +40,22 @@ namespace FindMaximumProblem
             throw new Exception("First Number , Second Number , Third Number are equal");
 
         }
+        public static string MaximumStringNumber(string firstValue, string secondValue, string thirdValue)
+        {
+            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            {
+                return firstValue;
+            }
+            if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            {
+                return secondValue;
+            }
+            if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
+            {
+                return thirdValue;
+            }
+            throw new Exception("First string , Second string , Third string are equal");
+
+        }
     }
 }
