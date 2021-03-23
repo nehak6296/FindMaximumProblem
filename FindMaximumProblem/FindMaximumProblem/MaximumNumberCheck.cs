@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FindMaximumProblem
 {
-   public class MaximumNumberCheck
+    public class MaximumNumberCheck
     {
         public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
         {
@@ -58,4 +58,6 @@ namespace FindMaximumProblem
 
         }
     }
+
 }
+
